@@ -14,7 +14,7 @@ use yii\helpers\Html;
 /**
  * Widget for wizard widget
  *
- * @author A.F.Schuurman <andre.schuurman+yii2-stepform@gmail.com>
+ * @author Ganesh <ganesh.alkurn@gmail.com>
  * @since 1.0
  */
 class Stepform extends Widget {
@@ -54,7 +54,7 @@ class Stepform extends Widget {
 	 */
 	public function run() {
 		parent::run();
-		stepformAsset::register($this->getView());
+		StepformAsset::register($this->getView());
 
 
 		// Stepform line calculation
@@ -62,7 +62,6 @@ class Stepform extends Widget {
 		$wizard_line_distribution = round(100 / $step_count); // Percentage
 		$wizard_line_width = round(100 - $wizard_line_distribution); // Percentage
 		$wizard_line = '';
-
 		$tab_content = '';
 
 		// Navigation tracker

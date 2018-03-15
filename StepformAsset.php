@@ -14,7 +14,7 @@ use yii\web\AssetBundle;
  * @author A.F.Schuurman <andre.schuurman+yii2-stepform@gmail.com>
  * @since 1.0
  */
-class stepformAsset extends AssetBundle
+class StepformAsset extends AssetBundle
 {
 	public $sourcePath = '@alkurn/stepform';
 	public $depends = [
